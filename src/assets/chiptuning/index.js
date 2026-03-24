@@ -9,10 +9,10 @@ import gpfRemoval from "./gpf-removal.jpg";
 import hardCutLimiter from "./hard-cut-limiter.jpg";
 import lambda02Delete from "./lambda-02-delete.jpg";
 import launchControlTuning from "./launch-control-tuning.jpg";
-import mafDelete from "./maf_delete.jpg";
+import mafDelete from "./maf-delete.jpg";
 import popcornHardcut from "./popcorn-hardcut.jpg";
-import speedLimiterRemoval from "./Speed-Limiter-Removal.jpg";
-import startStopDeleteRemoval from "./Start-Stop-Delete-Removal.jpg";
+import speedLimiterRemoval from "./speed-limiter-removal.jpg";
+import startStopDeleteRemoval from "./start-stop-delete-removal.jpg";
 import swirlFlapRemoval from "./swirl-flap-removal.jpg";
 
 export {
