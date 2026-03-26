@@ -89,6 +89,9 @@ export default function Gallery() {
                         src={galleryBanner}
                         alt="Galeri Banner"
                         className="w-full h-full object-cover"
+                        fetchpriority="high"
+                        loading="eager"
+                        decoding="sync"
                     />
                     {/* Dark Overlay for readability, reduced for clarity */}
                     <div className="absolute inset-0 bg-slate-900/10 mix-blend-multiply"></div>
@@ -180,6 +183,7 @@ export default function Gallery() {
                                             alt={`${currentCategory?.title} - Görsel ${idx + 1}`}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                             loading="lazy"
+                                            decoding="async"
                                         />
                                         <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors duration-300 flex items-center justify-center backdrop-blur-[1px] opacity-0 group-hover:opacity-100">
                                             <div className="bg-white/95 text-slate-900 p-3 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">

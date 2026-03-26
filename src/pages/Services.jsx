@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import {
     Wrench, Settings, Activity, Search,
     Cpu, Zap, Fuel, BarChart,
@@ -6,9 +6,10 @@ import {
 } from 'lucide-react';
 import Footer from '../components/Footer';
 import servicesBanner from '../assets/services-banner.jpg';
-import ChiptuningSection from '../components/chiptuning/ChiptuningSection';
-import GeneralServicesSection from '../components/services/GeneralServicesSection';
 import SEO from '../components/SEO';
+
+const ChiptuningSection = React.lazy(() => import('../components/chiptuning/ChiptuningSection'));
+const GeneralServicesSection = React.lazy(() => import('../components/services/GeneralServicesSection'));
 
 export default function Services() {
     const [activeTab, setActiveTab] = useState('genel');
@@ -33,6 +34,9 @@ export default function Services() {
                         src={servicesBanner}
                         alt="Hizmetler Banner"
                         className="w-full h-full object-cover"
+                        fetchpriority="high"
+                        loading="eager"
+                        decoding="sync"
                     />
                     {/* Consistent overlay with Gallery */}
                     <div className="absolute inset-0 bg-slate-900/10 mix-blend-multiply"></div>
@@ -78,11 +82,13 @@ export default function Services() {
                     </div>
 
                     {/* Render Content Based on Active Tab */}
-                    {activeTab === 'genel' ? (
-                        <GeneralServicesSection />
-                    ) : (
-                        <ChiptuningSection />
-                    )}
+                    <Suspense fallback={<div className="py-20 text-center text-slate-500">Yükleniyor...</div>}>
+                        {activeTab === 'genel' ? (
+                            <GeneralServicesSection />
+                        ) : (
+                            <ChiptuningSection />
+                        )}
+                    </Suspense>
                 </div>
             </section>
 

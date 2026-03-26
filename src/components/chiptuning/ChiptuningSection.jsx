@@ -39,6 +39,8 @@ export default function ChiptuningSection() {
                         alt="Hedef Power Chiptuning ve Performans Yazılımı Merkezi" 
                         className="w-full h-full object-cover" 
                         draggable={false}
+                        loading="lazy"
+                        decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-transparent md:block hidden"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent md:hidden block"></div>

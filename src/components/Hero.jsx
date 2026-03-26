@@ -36,6 +36,9 @@ export default function Hero() {
                             }`}
                         style={{ objectPosition: s.pos }}
                         draggable={false}
+                        fetchpriority={idx === 0 ? "high" : "auto"}
+                        loading={idx === 0 ? "eager" : "lazy"}
+                        decoding={idx === 0 ? "sync" : "async"}
                     />
                 ))}
                 {/* overlay */}
