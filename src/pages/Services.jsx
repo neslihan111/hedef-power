@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import servicesBanner from '../assets/services-banner.jpg';
 import ChiptuningSection from '../components/chiptuning/ChiptuningSection';
 import GeneralServicesSection from '../components/services/GeneralServicesSection';
+import SEO from '../components/SEO';
 
 export default function Services() {
     const [activeTab, setActiveTab] = useState('genel');
@@ -21,6 +22,10 @@ export default function Services() {
 
     return (
         <main className="min-h-screen flex flex-col font-sans">
+            <SEO 
+                title="Hizmetlerimiz | Hedef Power Araç Yazılımı" 
+                description="Profesyonel chiptuning, stage 1 tuning, DPF iptali, EGR iptali ve araç performans hizmetleri." 
+            />
             {/* Hero / Page Intro */}
             <section className="relative w-full h-[40vh] md:h-[55vh] min-h-[300px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
@@ -37,10 +42,10 @@ export default function Services() {
                 {/* Content */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col items-center md:items-start text-center md:text-left pt-10">
                     <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 lg:mb-6 tracking-tight drop-shadow-lg animate-[fadeInUp_0.6s_ease-out_0.1s_both]">
-                        Hizmetlerimiz
+                        Hedef Power Hizmetler
                     </h1>
                     <p className="text-lg md:text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-2xl font-light drop-shadow text-balance animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
-                        Araca özel yazılım,profesyonel chiptuning, garantili işlemler ile profesyonel hizmet.
+                        Araca özel yazılım, profesyonel chiptuning, garantili işlemler ile performans artırma.
                     </p>
                 </div>
             </section>

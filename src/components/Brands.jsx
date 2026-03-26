@@ -26,7 +26,7 @@ export default function Brands() {
             <div className="marquee-track">
               {loop.map((src, idx) => (
                 <div key={idx} className="brand-card">
-                  <img src={src} alt="Brand logo" draggable={false} />
+                  <img src={src} alt="Hedef Power referans araç markası" draggable={false} />
                 </div>
               ))}
             </div>

@@ -4,6 +4,7 @@ import { X, Folder, Image as ImageIcon, MessageCircle, ZoomIn } from 'lucide-rea
 import Footer from '../components/Footer';
 import carIcon from '../assets/car-icon.png';
 import galleryBanner from '../assets/gallery-banner.jpg';
+import SEO from '../components/SEO';
 
 // Dynamically import all images in the gallery subfolders
 const imageGlob = import.meta.glob('../assets/gallery/**/*.{jpg,jpeg,png,webp,svg}', { eager: true, query: '?url', import: 'default' });
@@ -76,6 +77,10 @@ export default function Gallery() {
 
     return (
         <main className="min-h-screen flex flex-col font-sans">
+            <SEO 
+                title="Hedef Power Galeri | Araç Performans Uygulamaları" 
+                description="Hedef Power'da gerçekleştirdiğimiz chiptuning ve araç yazılım uygulamalarının görselleri." 
+            />
             {/* Hero / Page Intro */}
             <section className="relative w-full h-[40vh] md:h-[55vh] min-h-[300px] flex items-center justify-center overflow-hidden">
                 {/* Background Image with Object Cover */}
@@ -93,10 +98,10 @@ export default function Gallery() {
                 {/* Content */}
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col items-center md:items-start text-center md:text-left pt-10">
                     <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 lg:mb-6 tracking-tight drop-shadow-lg animate-[fadeInUp_0.6s_ease-out_0.1s_both]">
-                        Galeri
+                        Uygulama Galerisi
                     </h1>
                     <p className="text-lg md:text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-2xl font-light drop-shadow text-balance animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
-                        Hedef Power kalite ve işçiliğini yansıtan kareler.
+                        Hedef Power kalite ve işçiliğini yansıtan chiptuning kareleri.
                     </p>
                 </div>
             </section>

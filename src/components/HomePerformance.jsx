@@ -12,7 +12,7 @@ export default function HomePerformance() {
 
                 <div className="text-center max-w-3xl mx-auto mb-20">
                     <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-                        Hedefini Yükselt
+                        Hedef Power ile Performansı Yükselt
                     </h2>
                     <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed">
                         Performans, verimlilik ve sürüş konforunu bir arada sunan çözümler. Aracınızın verimliliğini artırın.
@@ -24,7 +24,7 @@ export default function HomePerformance() {
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                         <div className="lg:w-1/2 w-full">
                             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer">
-                                <img src={ana1} alt="Performans" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:-rotate-1" draggable={false} />
+                                <img src={ana1} alt="Hedef Power Chiptuning ile Performans Artışı" loading="lazy" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:-rotate-1" draggable={false} />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-700"></div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export default function HomePerformance() {
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
                         <div className="lg:w-1/2 w-full">
                             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer">
-                                <img src={ana2} alt="Tasarruf" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:rotate-1" draggable={false} />
+                                <img src={ana2} alt="Araç Yazılımı ile Yakıt Tasarrufu" loading="lazy" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:rotate-1" draggable={false} />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-700"></div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ export default function HomePerformance() {
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                         <div className="lg:w-1/2 w-full">
                             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer">
-                                <img src={ana3} alt="Güvenli Performans" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:-rotate-1" draggable={false} />
+                                <img src={ana3} alt="Güvenli Stage 1 ve Stage 2 Tuning" loading="lazy" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:-rotate-1" draggable={false} />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-700"></div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ export default function HomePerformance() {
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
                         <div className="lg:w-1/2 w-full">
                             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer">
-                                <img src={ana4} alt="Modern Çözüm" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:rotate-1" draggable={false} />
+                                <img src={ana4} alt="EGR, DPF ve Adblue İptali Çözümleri" loading="lazy" className="w-full h-[400px] md:h-[500px] object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:rotate-1" draggable={false} />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-700"></div>
                             </div>
                         </div>

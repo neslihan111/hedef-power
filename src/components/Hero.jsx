@@ -31,7 +31,7 @@ export default function Hero() {
                     <img
                         key={idx}
                         src={s.src}
-                        alt=""
+                        alt="hedef power araç içi chiptuning uygulaması"
                         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${idx === currentSlide ? "opacity-100" : "opacity-0"
                             }`}
                         style={{ objectPosition: s.pos }}
@@ -50,11 +50,11 @@ export default function Hero() {
                     {currentSlide === 0 && (
                         <div className="hero-content text-white animate-[fadeIn_0.5s_ease-out]">
                             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-lg">
-                                Performansı Yeniden Tanımlayın
+                                Hedef Power | Performansı Yeniden Tanımlayın
                             </h1>
 
                             <p className="mt-4 text-base md:text-lg text-white/90 max-w-2xl drop-shadow-md">
-                                Aracınıza güçlü ve profesyonel dokunuş.
+                                Aracınıza güçlü dokunuş: Profesyonel chiptuning ve araç yazılım merkezi.
                             </p>
 
                             <div className="mt-6 flex flex-col sm:flex-row gap-4">

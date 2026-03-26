@@ -36,7 +36,7 @@ export default function ChiptuningSection() {
                 <div className="md:w-1/2 w-full h-64 md:h-full absolute md:relative right-0 top-0 opacity-40 md:opacity-100 z-0 mask-image-gradient">
                     <img 
                         src={dsgTuningRemaps} 
-                        alt="Chiptuning Hero" 
+                        alt="Hedef Power Chiptuning ve Performans Yazılımı Merkezi" 
                         className="w-full h-full object-cover" 
                         draggable={false}
                     />
