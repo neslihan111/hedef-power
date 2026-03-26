@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
+import { Instagram, Facebook } from "lucide-react";
 
 import footerLogo from "../assets/footer/logo.png";
 
@@ -166,33 +167,36 @@ export default function Footer() {
             </div>
 
             {/* Sosyal linkler */}
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-3">
               <a
-                className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-[#111] hover:bg-[#111] hover:text-white hover:border-[#111] transition"
+                className="rounded-full border border-slate-300 p-2.5 text-[#111] hover:bg-[#111] hover:text-white hover:border-[#111] transition flex items-center justify-center"
                 href="https://www.instagram.com/hedefotogaz27/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram Sayfası 1"
+                title="hedefotogaz27"
               >
-                Instagram 1
+                <Instagram size={20} />
               </a>
               <a
-                className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-[#111] hover:bg-[#111] hover:text-white hover:border-[#111] transition"
+                className="rounded-full border border-slate-300 p-2.5 text-[#111] hover:bg-[#111] hover:text-white hover:border-[#111] transition flex items-center justify-center"
                 href="https://www.instagram.com/hedef_power_chiptuning/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram Sayfası 2"
+                title="hedef_power_chiptuning"
               >
-                Instagram 2
+                <Instagram size={20} />
               </a>
               <a
-                className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-[#111] hover:bg-[#111] hover:text-white hover:border-[#111] transition"
+                className="rounded-full border border-slate-300 p-2.5 text-[#111] hover:bg-[#111] hover:text-white hover:border-[#111] transition flex items-center justify-center"
                 href="https://www.facebook.com/N.Ali2727?mibextid=wwXIfr&rdid=VDJi1DgzplBfrQXm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Ds4jFoXTM%2F%3Fmibextid%3DwwXIfr#"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook Sayfası"
+                title="Facebook Sayfası"
               >
-                Facebook
+                <Facebook size={20} />
               </a>
             </div>
           </div>

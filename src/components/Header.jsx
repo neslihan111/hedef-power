@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 import headerLogo from '../assets/footer/logo.png';
 
 function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const navLinks = [
         { name: 'Anasayfa', path: '/#home' },
@@ -17,7 +26,7 @@ function Header() {
     ];
 
     return (
-        <header className="absolute top-0 left-0 w-full z-50 py-4">
+        <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-4'}`}>
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between w-full">
 
                 {/* Logo Area */}
@@ -51,11 +60,8 @@ function Header() {
                     })}
                 </nav>
 
-                {/* Right Area (Search & Mobile Toggle) */}
+                {/* Right Area (Mobile Toggle) */}
                 <div className="flex-1 basis-0 flex justify-end items-center gap-4">
-                    <button className="text-white drop-shadow-md p-2 hover:bg-white/10 rounded-full transition-colors hidden md:block" aria-label="Search">
-                        <Search size={20} />
-                    </button>
                     <button
                         className="md:hidden text-white drop-shadow-md p-1 hover:bg-white/10 rounded-full transition-colors"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -67,7 +73,7 @@ function Header() {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="bg-black/50 backdrop-blur-md px-4 py-4 space-y-3 mt-4 border-t border-white/10 flex flex-col items-center justify-center text-center">
                     {navLinks.map((link) => {
                         const isActive = location.pathname === link.path;

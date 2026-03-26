@@ -19,7 +19,7 @@ export default function Hero() {
     useEffect(() => {
         const id = setInterval(() => {
             setCurrentSlide((p) => (p + 1) % slides.length);
-        }, 6000); // 6 saniye
+        }, 4000); // 4 saniye
         return () => clearInterval(id);
     }, [slides.length]);
 
